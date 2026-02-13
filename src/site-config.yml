@@ -1,19 +1,19 @@
 author:
-  name: Dasein
-  role: PhD in Philosophy
-  bio:  Known for contributions to phenomenology, hermeneutics, and existentialism.
-  location: Munich, Germany
+  name: Tejas Shastry
+  role: Persuing Masters in Electrical Engineering
+  bio:  Student at THWS, Schweinfurt, Germany. Passionate about AI, Mathematics, and Computer Science
+  location: Schweinfurt, Germany
 
 social:
-  - id: "x"
-    label: "X"
-    href: "#_"
-  - id: "github"
-    label: "GitHub"
-    href: "https://github.com/roicort"
+  # - id: "x"
+  #   label: "X"
+  #   href: "#_"
+  # - id: "github"
+  #   label: "GitHub"
+  #   href: "https://github.com/roicort"
   - id: "linkedin"
     label: "Linkedin"
     href: "#_"
   - id: "email"
     label: "Email"
-    href: "mailto:"
+    href: "mailto:contact@its-tejas.com"
