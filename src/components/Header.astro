@@ -5,6 +5,7 @@ import HeaderLink from "./HeaderLink.astro";
 const site = await getSite();
 import SearchModal from "./SearchModal.astro";
 import ThemeToggle from "./ThemeToggle.astro";
+const isGithubActions = process.env.GITHUB_ACTIONS === "true";
 ---
 
 <header class="site-header">
@@ -36,14 +37,16 @@ import ThemeToggle from "./ThemeToggle.astro";
       >
         GitHub
       </a>
-      <button
-        id="debug-toggle"
-        aria-label="Toggle debug borders"
-        aria-pressed="false"
-        class="text-xs 2xl:text-lg text-base-900 hover:text-base-500 font-bold uppercase"
-      >
-        Debug
-      </button>
+      {!isGithubActions && (
+        <button
+          id="debug-toggle"
+          aria-label="Toggle debug borders"
+          aria-pressed="false"
+          class="text-xs 2xl:text-lg text-base-900 hover:text-base-500 font-bold uppercase"
+        >
+          Debug
+        </button>
+      )}
       <ThemeToggle class="text-xs 2xl:text-lg text-base-900 hover:text-base-500 font-bold uppercase" />
     </div>
 
@@ -57,7 +60,9 @@ import ThemeToggle from "./ThemeToggle.astro";
         <HeaderLink href="/about">About</HeaderLink>
         <SearchModal class="text-xs 2xl:text-lg hover:text-base-500 font-bold uppercase" />
         <a class="text-xs 2xl:text-lg hover:text-base-500 font-bold uppercase" href="https://github.com/roicort/launchpad" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <button id="mobile-debug" aria-label="Toggle debug borders" class="text-xs 2xl:text-lg hover:text-base-500 font-bold uppercase">Debug</button>
+        {!isGithubActions && (
+          <button id="mobile-debug" aria-label="Toggle debug borders" class="text-xs 2xl:text-lg hover:text-base-500 font-bold uppercase">Debug</button>
+        )}
         <ThemeToggle class="text-xs 2xl:text-lg hover:text-base-500 font-bold uppercase" />
       </div>
     </div>
