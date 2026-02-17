@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import PageLayout from '../../layouts/PageLayout.astro';
 import { getSite } from '../../utils/consts';
 
-const posts = await getCollection('blog');
+const posts = await getCollection('blog', ({ data }) => !data.draft);
 const site = await getSite();
 const slugify = (value: string) => value.toLowerCase().replace(/\s+/g, '-');
 
