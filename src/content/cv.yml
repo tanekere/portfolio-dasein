@@ -2,8 +2,11 @@
   heading: "Education"
   items:
     - title: "Bachelors in Mechatonics"
-      description: "At THWS with specailizations in Machine Learning, Voice Control, Digital Harware Design and Design of Experiments"
+      description: "At THWS with specializations in Machine Learning, Voice Control, Digital Hardware Design and Design of Experiments"
       datetime: "2021 – 2025"
+    - title: "Masters in Electrical Engineering and Information Technology"
+      description: "At THWS with specialization in High Voltage Engineering"
+      datetime: "2026 - Now"
     # - title: "Bachelor's in Philosophy"
     #   description: "Studied philosophy with an emphasis on critical thinking and ethical reasoning."
     #   datetime: "2016 – 2020"
@@ -20,7 +23,9 @@
     - title: "Cim Tools Pvt Ltd"
       description: "Worked in Maintainace and  Quality control for Aerospace components. Gained experience in Meacuring Techology, Machining, Surface Treatment and Non-Destructive Testing."
       datetime: "June 2021"
-
+    - title: "Lab Assistant(HiWi)"
+      description: "Conducting experiment and analyzing results at the IEHT(High Voltage Technology Institute) at THWS"
+      datetime: "April 2026 - Now"
 # - id: "speaking"
 #   heading: "Speaking"
 #   items:
